@@ -1,36 +1,55 @@
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .toDoContainer {
-    height: 830px;
-    width: 415px;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
     padding: 15px;
     border-radius: 0;
+    border: none;
   }
-  .textToDoContainer{
-    padding: 13px;
+
+  .container {
+    margin-top: 0;
+    padding: 0 8px;
   }
-  .inputContainer input{
-    width: 450px;
+
+  .textToDoContainer {
+    font-size: 24px;
+    padding: 13px 0;
+  }
+
+  .inputContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .inputContainer input {
+    width: calc(100% - 110px);
+    max-width: 100%;
     font-size: 16px;
-    color: aliceblue;
-    padding: 6px;
+    color: #ffffff;
+    padding: 8px 10px;
   }
-  .mainButton{
-    width: 130px;
+
+  .mainButton {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
   }
-  .toDoListItem{
-    padding: 8px;
+
+  .toDoListItem {
+    padding: 12px;
     padding-left: 15px;
+    border-radius: 20px;
   }
-  .toDoList{
-    height: 600px;
-  }
-  .container{
-    margin-top: 0px;
+
+  .toDoList {
+    height: auto;
+    max-height: calc(100vh - 260px);
   }
 
   .deleteBtn {
-  padding: 10px;
-  font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
 }
-}
-
